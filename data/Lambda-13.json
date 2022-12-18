@@ -1,0 +1,8 @@
+{
+  "contest": 195,
+  "handle": "Lambda",
+  "risk": "",
+  "title": "OptimisticListingSeaport: pendingBalances overwritten instead of increased",
+  "issueId": 13,
+  "issueUrl": "https://github.com/code-423n4/2022-12-tessera-findings/issues/13"
+}
