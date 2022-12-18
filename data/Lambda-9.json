@@ -1,0 +1,8 @@
+{
+  "contest": 195,
+  "handle": "Lambda",
+  "risk": "",
+  "title": "User can provide malicious _market in GroupBuy.purchase to steal funds or NFT",
+  "issueId": 9,
+  "issueUrl": "https://github.com/code-423n4/2022-12-tessera-findings/issues/9"
+}
