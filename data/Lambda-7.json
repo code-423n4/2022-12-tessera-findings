@@ -1,0 +1,8 @@
+{
+  "contest": 195,
+  "handle": "Lambda",
+  "risk": "",
+  "title": "GroupBuy: Lost ETH when the NFT is bought for less than the minimum reserve price",
+  "issueId": 7,
+  "issueUrl": "https://github.com/code-423n4/2022-12-tessera-findings/issues/7"
+}
