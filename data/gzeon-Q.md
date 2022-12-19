@@ -18,6 +18,10 @@ Disclaimer: report extended from 4naly3er tool
 | [NC-2](#NC-2) | Return values of `approve()` not checked | 1 |
 | [NC-3](#NC-3) | Functions not used internally could be marked external | 11 |
 | [NC-4](#NC-4) | minBidPrices is rounded down | 1 |
+| [NC-5](#NC-5) | Member of _tokenIds might not be unique | 1 |
+| [NC-6](#NC-6) | Do not use assert() in production | 1 |
+| [NC-7](#NC-7) | Hardcoded fees | 1 |
+| [NC-8](#NC-8) | Wrong comment | 1 |
 
 ### <a name="L-1"></a>[L-1] Unsafe ERC20 operation(s)
 
@@ -150,3 +154,43 @@ minBidPrices is rounded down and can be 0, which will cause precision issue
         minBidPrices[currentId] = _initialPrice / _totalSupply;
 ```
 [Link to code](https://github.com/code-423n4/2022-12-tessera/blob/f37a11407da2af844bbfe868e1422e3665a5f8e4/src/modules/GroupBuy.sol#L83)
+
+### <a name="NC-5"></a>[NC-5] Member of _tokenIds might not be unique
+
+```solidity
+        uint256[] calldata _tokenIds,
+```
+[Link to code](https://github.com/code-423n4/2022-12-tessera/blob/f37a11407da2af844bbfe868e1422e3665a5f8e4/src/modules/GroupBuy.sol#L59)
+
+### <a name="NC-6"></a>[NC-6] Do not use assert() in production
+
+It will consume all gas and does not provide a revert string, use `require()` instead
+
+```solidity
+        assert(ConsiderationInterface(_consideration).validate(_orders));
+```
+[Link to code](https://github.com/code-423n4/2022-12-tessera/blob/f37a11407da2af844bbfe868e1422e3665a5f8e4/src/seaport/targets/SeaportLister.sol#L45)
+
+```solidity
+        assert(ConsiderationInterface(_consideration).cancel(_orders));
+```
+[Link to code](https://github.com/code-423n4/2022-12-tessera/blob/f37a11407da2af844bbfe868e1422e3665a5f8e4/src/seaport/targets/SeaportLister.sol#L52)
+
+### <a name="NC-7"></a>[NC-7] Hardcoded fees
+
+Would require migration if either decided to change fee structure in the future.
+
+```solidity
+        uint256 openseaFees = _listingPrice / 40;
+        uint256 tesseraFees = _listingPrice / 20;
+```
+[Link to code](https://github.com/code-423n4/2022-12-tessera/blob/f37a11407da2af844bbfe868e1422e3665a5f8e4/src/seaport/modules/OptimisticListingSeaport.sol#L395-L396)
+
+### <a name="NC-8"></a>[NC-8] Wrong comments
+
+Here should be `+ 2 consideration for the fees`
+
+```solidity
+            // 1 Consideration for the listing itself + 1 consideration for the fees
+```
+[Link to code](https://github.com/code-423n4/2022-12-tessera/blob/f37a11407da2af844bbfe868e1422e3665a5f8e4/src/seaport/modules/OptimisticListingSeaport.sol#L384)
