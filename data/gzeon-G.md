@@ -19,6 +19,8 @@ Disclaimer: report extended from 4naly3er tool
 | [Gas-10](#GAS-10) | Use unchecked when it is safe | ? |
 | [Gas-11](#GAS-11) | Refund contribution and pending balance in the same call | 1 |
 | [Gas-12](#GAS-12) | Generate merkle tree offchain | 1 |
+| [Gas-13](#GAS-13) | Pack Bid Struck | 1 |
+| [Gas-14](#GAS-14) | Pack Queue Struck | 1 |
 
 ### <a name="GAS-1"></a>[GAS-1] Use assembly to check for `address(0)`
 *Saves 6 gas per instance*
@@ -275,3 +277,59 @@ Generate merkle tree onchain is expensive espically when you want to include a l
         bytes32 merkleRoot = (length == 1) ? bytes32(_tokenIds[0]) : _generateRoot(_tokenIds);
 ```
 [Link to code](https://github.com/code-423n4/2022-12-tessera/blob/f37a11407da2af844bbfe868e1422e3665a5f8e4/src/modules/GroupBuy.sol#L71)
+
+### <a name="GAS-13"></a>[GAS-13] Pack Bid Struct
+
+The Bid struct can be packed tighter
+
+```solidity
+struct Bid {
+    uint256 bidId;
+    address owner;
+    uint256 price;
+    uint256 quantity;
+}
+```
+[Link to code](https://github.com/code-423n4/2022-12-tessera/blob/f37a11407da2af844bbfe868e1422e3665a5f8e4/src/lib/MinPriorityQueue.sol#L4-L9)
+to
+```solidity
+struct Bid {
+    uint96 bidId;
+    address owner;
+    uint256 price;
+    uint256 quantity;
+}
+```
+
+### <a name="GAS-14"></a>[GAS-14] Pack Queue Struct
+
+```solidity
+    struct Queue {
+        ///@notice incrementing bid id
+        uint256 nextBidId;
+        ///@notice array backing priority queue
+        uint256[] bidIdList;
+        ///@notice total number of bids in queue
+        uint256 numBids;
+        //@notice map bid ids to bids
+        mapping(uint256 => Bid) bidIdToBidMap;
+        ///@notice map addreses to bids they own
+        mapping(address => uint256[]) ownerToBidIds;
+    }
+```
+[Link to code](https://github.com/code-423n4/2022-12-tessera/blob/f37a11407da2af844bbfe868e1422e3665a5f8e4/src/lib/MinPriorityQueue.sol#L13-L24)
+to
+```solidity
+    struct Queue {
+        ///@notice incrementing bid id
+        uint96 nextBidId;
+        ///@notice total number of bids in queue
+        uint160 numBids;
+        ///@notice array backing priority queue
+        uint256[] bidIdList;
+        //@notice map bid ids to bids
+        mapping(uint256 => Bid) bidIdToBidMap;
+        ///@notice map addreses to bids they own
+        mapping(address => uint256[]) ownerToBidIds;
+    }
+```
