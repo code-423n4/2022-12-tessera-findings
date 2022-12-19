@@ -1,0 +1,8 @@
+{
+  "contest": 195,
+  "handle": "Trust",
+  "risk": "",
+  "title": "Funds are permanently stuck in OptimisticListingSeaport.sol contract if active proposal is executed after new proposal is pending.",
+  "issueId": 43,
+  "issueUrl": "https://github.com/code-423n4/2022-12-tessera-findings/issues/43"
+}
