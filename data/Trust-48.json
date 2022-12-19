@@ -1,0 +1,8 @@
+{
+  "contest": 195,
+  "handle": "Trust",
+  "risk": "",
+  "title": "When user of GroupBuy is a contract, refunds will be permanently frozen.",
+  "issueId": 48,
+  "issueUrl": "https://github.com/code-423n4/2022-12-tessera-findings/issues/48"
+}
