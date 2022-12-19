@@ -1,0 +1,8 @@
+{
+  "contest": 195,
+  "handle": "Trust",
+  "risk": "",
+  "title": "Attacker can make group pay for tokenID that is not intended.",
+  "issueId": 46,
+  "issueUrl": "https://github.com/code-423n4/2022-12-tessera-findings/issues/46"
+}
