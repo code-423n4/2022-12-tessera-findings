@@ -1,0 +1,8 @@
+{
+  "contest": 195,
+  "handle": "IllIllI",
+  "risk": "",
+  "title": "Revert on zero transfer tokens can be used to prevent NFTs from being sold",
+  "issueId": 35,
+  "issueUrl": "https://github.com/code-423n4/2022-12-tessera-findings/issues/35"
+}
