@@ -1,0 +1,8 @@
+{
+  "contest": 195,
+  "handle": "cccz",
+  "risk": "",
+  "title": "contribute() locks too much ETH from the user",
+  "issueId": 26,
+  "issueUrl": "https://github.com/code-423n4/2022-12-tessera-findings/issues/26"
+}
