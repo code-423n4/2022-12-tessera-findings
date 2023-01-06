@@ -1,7 +1,7 @@
 {
   "contest": 195,
   "handle": "Lambda",
-  "risk": "",
+  "risk": "2",
   "title": "Groupbuy: Construction of merkle tree allows some unintended IDs to be bought",
   "issueId": 11,
   "issueUrl": "https://github.com/code-423n4/2022-12-tessera-findings/issues/11"
