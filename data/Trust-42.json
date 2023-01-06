@@ -1,7 +1,7 @@
 {
   "contest": 195,
   "handle": "Trust",
-  "risk": "",
+  "risk": "3",
   "title": "Any user which holds Raes tokens can infinitely freeze NFT in OptimisticListingSeaport",
   "issueId": 42,
   "issueUrl": "https://github.com/code-423n4/2022-12-tessera-findings/issues/42"
