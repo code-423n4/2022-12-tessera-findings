@@ -1,7 +1,7 @@
 {
   "contest": 195,
   "handle": "IllIllI",
-  "risk": "",
+  "risk": "2",
   "title": "Priority queue min accounting breaks when nodes are split in two",
   "issueId": 32,
   "issueUrl": "https://github.com/code-423n4/2022-12-tessera-findings/issues/32"
