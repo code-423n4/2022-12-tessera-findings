@@ -1,7 +1,7 @@
 {
   "contest": 195,
   "handle": "IllIllI",
-  "risk": "",
+  "risk": "2",
   "title": "Users that send funds at a price lower than the current low bid have the funds locked",
   "issueId": 31,
   "issueUrl": "https://github.com/code-423n4/2022-12-tessera-findings/issues/31"
