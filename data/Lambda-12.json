@@ -1,7 +1,7 @@
 {
   "contest": 195,
   "handle": "Lambda",
-  "risk": "",
+  "risk": "3",
   "title": "OptimisticListingSeaport.propose sets pendingBalances of newly added proposer instead of previous one",
   "issueId": 12,
   "issueUrl": "https://github.com/code-423n4/2022-12-tessera-findings/issues/12"
