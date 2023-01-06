@@ -1,7 +1,7 @@
 {
   "contest": 195,
   "handle": "Lambda",
-  "risk": "",
+  "risk": "3",
   "title": "Groupbuy: _verifyUnsuccessfulState and _verifySuccessfulState both can return true when block.timestamp == pool.terminationPeriod",
   "issueId": 10,
   "issueUrl": "https://github.com/code-423n4/2022-12-tessera-findings/issues/10"
