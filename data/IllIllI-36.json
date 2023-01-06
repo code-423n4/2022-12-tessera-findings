@@ -1,7 +1,7 @@
 {
   "contest": 195,
   "handle": "IllIllI",
-  "risk": "",
+  "risk": "2",
   "title": "Orders may not be fillable due to missing approvals",
   "issueId": 36,
   "issueUrl": "https://github.com/code-423n4/2022-12-tessera-findings/issues/36"
