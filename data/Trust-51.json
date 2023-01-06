@@ -1,7 +1,7 @@
 {
   "contest": 195,
   "handle": "Trust",
-  "risk": "",
+  "risk": "2",
   "title": "Bidding data structure is corrupted, leading to unfair removal from queue.",
   "issueId": 51,
   "issueUrl": "https://github.com/code-423n4/2022-12-tessera-findings/issues/51"
