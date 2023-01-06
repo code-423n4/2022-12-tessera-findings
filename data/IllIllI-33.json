@@ -1,7 +1,7 @@
 {
   "contest": 195,
   "handle": "IllIllI",
-  "risk": "",
+  "risk": "2",
   "title": "No validation is done on the NFTs being supplied to `createPool()`",
   "issueId": 33,
   "issueUrl": "https://github.com/code-423n4/2022-12-tessera-findings/issues/33"
