@@ -1,7 +1,7 @@
 {
   "contest": 195,
   "handle": "gzeon",
-  "risk": "",
+  "risk": "3",
   "title": "GroupBuy may purchase NFT not in the allowed list",
   "issueId": 14,
   "issueUrl": "https://github.com/code-423n4/2022-12-tessera-findings/issues/14"
