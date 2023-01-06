@@ -1,7 +1,7 @@
 {
   "contest": 195,
   "handle": "cccz",
-  "risk": "",
+  "risk": "2",
   "title": "MinPriorityQueue: when the quantity and price are the same, the sorting is not correct",
   "issueId": 27,
   "issueUrl": "https://github.com/code-423n4/2022-12-tessera-findings/issues/27"
