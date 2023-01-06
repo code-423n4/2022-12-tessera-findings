@@ -1,7 +1,7 @@
 {
   "contest": 195,
   "handle": "Lambda",
-  "risk": "",
+  "risk": "3",
   "title": "GroupBuy does not check return value of call",
   "issueId": 6,
   "issueUrl": "https://github.com/code-423n4/2022-12-tessera-findings/issues/6"
