@@ -1,7 +1,7 @@
 {
   "contest": 195,
   "handle": "Trust",
-  "risk": "",
+  "risk": "3",
   "title": "Proposal can be infinitely DOSed with no additional conditions",
   "issueId": 41,
   "issueUrl": "https://github.com/code-423n4/2022-12-tessera-findings/issues/41"
