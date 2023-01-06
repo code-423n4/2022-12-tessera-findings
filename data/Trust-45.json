@@ -1,7 +1,7 @@
 {
   "contest": 195,
   "handle": "Trust",
-  "risk": "",
+  "risk": "2",
   "title": " Earlier bidders get cut out of future NFT holdings by bidders specifying the same price.",
   "issueId": 45,
   "issueUrl": "https://github.com/code-423n4/2022-12-tessera-findings/issues/45"
