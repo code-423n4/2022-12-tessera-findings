@@ -1,7 +1,7 @@
 {
   "contest": 195,
   "handle": "IllIllI",
-  "risk": "",
+  "risk": "2",
   "title": "Funds will be lost if the contract handling the refunds are unable to handle them at the moment",
   "issueId": 30,
   "issueUrl": "https://github.com/code-423n4/2022-12-tessera-findings/issues/30"
