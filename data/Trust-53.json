@@ -1,7 +1,7 @@
 {
   "contest": 195,
   "handle": "Trust",
-  "risk": "",
+  "risk": "2",
   "title": "User can send a proposal and instantly take back their collateral, keeping the proposal active without risking any Raes amount.",
   "issueId": 53,
   "issueUrl": "https://github.com/code-423n4/2022-12-tessera-findings/issues/53"
